@@ -3,7 +3,7 @@
 set -e
 
 IMAGE=concourse-ansible-resource
-DOCKER_HUB_USER=platformengineering
+DOCKER_HUB_USER=cscanlin
 
 # 1. Build the docker image
 docker build -t $IMAGE .
