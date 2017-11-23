@@ -11,15 +11,3 @@ COPY tests/ /opt/resource/tests/
 
 # install resource assets
 COPY assets/ /opt/resource/
-
-# install tests
-#ADD scripts/* /tmp/
-#RUN /tmp/install_test.sh
-
-# test
-#RUN /tmp/test.sh
-#RUN /tmp/cleanup_test.sh
-
-# default command: display local setup
-CMD ["ansible", "-c", "local", "-m", "setup", "all"]
-# CMD [ "ansible-playbook", "--version" ]
